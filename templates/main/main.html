@@ -1,0 +1,13 @@
+{% extends 'laout.html' %}
+
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block main %}
+    <h1>{{ title }}</h1>
+    {% for skill in skills %}
+        <p>{{ skill }}</p>
+    {% endfor %}
+{% endblock %}
