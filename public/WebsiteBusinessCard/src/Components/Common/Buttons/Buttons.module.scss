@@ -1,0 +1,39 @@
+.button {
+    display: flex;
+    width: 270px;
+    height: 63px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    background: #000;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0 0 #fd5;
+    color: #fff;
+    cursor: pointer;
+    font-size: 32px;
+
+    & button {
+        font-weight: 700;
+    }
+
+    &:hover {
+        background: #fd5;
+        color: #fff;
+        transform: rotate(2deg);
+        transition: all 0.3s ease-in;
+    }
+
+    @media screen and (max-width: 1160px) {
+        height: 48px;
+        font-size: 28px !important;
+    }
+
+    @media screen and (max-width: 960px) {
+        width: 200px;
+    }
+
+    @media screen and (max-width: 460px) {
+        width: 180px;
+        font-size: 22px !important;
+    }
+}

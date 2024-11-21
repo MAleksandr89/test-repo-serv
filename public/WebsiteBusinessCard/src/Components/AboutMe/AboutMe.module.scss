@@ -1,0 +1,79 @@
+.about-me {
+    position: relative;
+    width: 700px;
+    margin-top: 70px;
+
+    @media screen and (max-width: 1160px) {
+        width: unset;
+        padding: 0 100px;
+    }
+
+    @media screen and (max-width: 460px) {
+        padding: 0 50px;
+    }
+}
+
+.about-me__title {
+    margin-left: -40px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.about-me__subtitle-wrapper {
+    position: relative;
+}
+
+.about-me__time-line {
+    position: absolute;
+    left: -25px;
+    width: 4px;
+    height: 70%;
+    background-color: #fd5;
+}
+
+.about-me__subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+
+    &::before {
+        position: absolute;
+        left: -41px;
+        display: block;
+        width: 35px;
+        height: 35px;
+        border: 5px solid #fd5;
+        background-color: #fff;
+        border-radius: 50%;
+        content: '';
+    }
+}
+
+.about-me__job-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about-me__skills {
+    margin-top: 55px;
+
+    &-title {
+        margin-left: -40px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+
+        @media screen and (max-width: 1160px) {
+            grid-template-columns: repeat(3, 0fr);
+        }
+
+        @media screen and (max-width: 460px) {
+            grid-template-columns: repeat(2, 0fr);
+        }
+    }
+}
